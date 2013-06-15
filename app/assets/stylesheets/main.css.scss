@@ -1,0 +1,138 @@
+// Place all the styles related to the main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "shadow_and_round";
+/*config*/
+/*param 1.55 */
+$thumb_width: 300px;
+$thumb_height: 193px;
+
+$big_image_width: 620px;
+$big_image_height: 465px;
+
+
+#main_container,.hero-unit {
+  @extend .border_shadow;
+  @extend .border_radius;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.backgound_image{
+  background-repeat: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -ms-background-size:cover;
+
+}
+
+.thumbnail2 {
+  border-width: 0px;
+  padding: 0px !important; 
+  height: 340px !important; 
+  color: rgb(248, 238, 178);
+  @extend .border_radius;
+}
+
+.thumbnail2:hover{
+  background-color: rgba(255, 255, 255, 0.0980392) !important;
+  @extend .border_shadow;
+}
+
+.thumbnail3 {
+  border-width: 0px;
+  padding: 0px !important; 
+  height: 105px !important; 
+ /* color: rgb(248, 238, 178);*/
+ //background-color: #022f4b;
+ @extend .border_shadow;
+  margin-left: 0px !important;
+ @extend .border_radius;
+
+}
+
+.thumbnail3:hover{
+  background-color: rgba(255, 255, 255, 0.0980392) !important;
+  @extend .border_shadow;
+}
+
+
+.image_thumb{
+@extend .backgound_image;
+/* @extend .border_radius;*/
+@extend .top_left_radius;
+@extend .top_right_radius;
+
+height: $thumb_height !important;
+width: $thumb_width !important;
+
+}
+
+.item{ 
+  @extend .backgound_image;
+  @extend .border_radius;
+ /* width: $big_image_width: 620px !important;*/
+  height: $big_image_height !important;
+}
+.thumb_text{
+  padding-left: 5px;
+}
+
+#items_list{
+  margin-left: 0px !important; 
+  background-color: rgb(3, 52, 82) !important; 
+  width: 940px;
+}
+
+/*
+#subscribe{
+  height: 150px !important; 
+}*/
+#phone_input{
+  width: 285px !important; 
+}
+
+.image_item{
+  text-align: center;
+  margin-left: 0px !important;
+  height: 105px;
+  @extend .backgound_image;
+ // @extend .top_left_radius;
+ // @extend .bottom_left_radius;
+ @extend .border_radius;
+}
+.region_title{
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  @extend .top_left_radius;
+  @extend .top_right_radius
+}
+
+
+#search_box{
+ // background-color: #2d6a99 !important;
+ background-color: rgba(3, 52, 82, 0.8) !important;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 0px !important;
+  margin-bottom: 10px;
+
+}
+
+#add_new_post{
+  @extend .border_radius;
+  @extend .border_shadow;
+  width: 140px !important;
+  background-color: #2d6a99 !important;
+  z-index: 100;
+  position: fixed;
+}
+
+.control-label,#myModalLabel{
+  color: #000000 !important;
+}
+#inputdescription{
+  height: 100px;
+}
